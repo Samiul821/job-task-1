@@ -11,14 +11,16 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="px-4 md:px-10 lg:px-[120px] pb-[60px]">
-      <div className="pt-[120px] pb-20">
-        <div className="flex justify-between">
+    <div className="px-4 md:px-10 lg:px-[120px] pb-8 md:pb-10 lg:pb-[60px]">
+      <div className="md:pt-[120px] py-8 md:pb-10 lg:pb-20">
+        <div className="grid grid-cols-1 lg:flex lg:justify-between gap-8 md:gap-10">
           <div>
             <div>
-              <h1 className="text-[32px] font-bold mb-7">Business Logo</h1>
+              <h1 className="text-xl md:text-[32px] font-bold mb-4 md:mb-7">
+                Business Logo
+              </h1>
             </div>
-            <div className="flex space-x-4 text-2xl">
+            <div className="flex space-x-4 text-xl md:text-2xl">
               <Link>
                 <FaFacebook />
               </Link>
@@ -33,7 +35,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex justify-between space-x-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 space-x-10 space-y-8">
             <div>
               <h4 className="text-sm font-semibold mb-6">Our Services</h4>
               <div className="flex flex-col space-y-4">
@@ -74,14 +76,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
+
+      <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center">
         <div>
-          <p className="text-sm text-[#2A2F3250]">
-            © Plumbing Pros. All Rights Reserved 
+          <p className="text-[10px] md:text-sm text-center md:text-left text-[#2A2F3250]">
+            © Plumbing Pros. All Rights Reserved
           </p>
         </div>
         <div>
-          <p className="text-sm text-[#2A2F3250]">
+          <p className="text-[10px] md:text-sm text-center md:text-right text-[#2A2F3250]">
             Website by IH Adventure And Creative
           </p>
         </div>
