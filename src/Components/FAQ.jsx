@@ -3,14 +3,14 @@ import React from "react";
 const FAQ = () => {
   return (
     <div className="py-8 md:py-10 lg:py-[120px]">
-      <div className="mb-8 md:mb-10 lg:mb-[120px]">
+      <div className="mb-16 md:mb-10 lg:mb-[120px]">
         <h1 className="text-center text-2xl font-bold md:text-[32px] lg:text-5xl">
           Frequently asked questions
         </h1>
       </div>
 
       {/* Center Content */}
-      <div className="flex justify-center">
+      <div className="flex justify-center px-4 md:px-10">
         <div className="join join-vertical w-full max-w-[920px]">
           <div className="collapse collapse-arrow join-item border-base-300 border-b-2">
             <input type="radio" name="my-accordion-4" defaultChecked />
